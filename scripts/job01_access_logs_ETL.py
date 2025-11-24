@@ -7,7 +7,7 @@ from pyspark.sql.functions import split, regexp_extract, regexp_replace, col
 import sys
 
 ### ユーザー名を設定
-username = "adminxx" ## 講師の指示に従って更新してください
+username = "userxx" ## 講師の指示に従って更新してください
 bucketname = "xxx"  ## 講師の指示に従って更新してください
 
 ### DB名・アプリ名をユーザー名に応じて設定
