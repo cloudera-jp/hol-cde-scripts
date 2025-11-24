@@ -7,12 +7,13 @@ import org.apache.spark.sql.SparkSession
 //---------------------------------------------------
 //              SPARK セッションを作成
 //---------------------------------------------------
-val user = "chihiro_sano" // 講師の指示に従って更新してください
+val user = "userxx" // 講師の指示に従って更新してください
 val appName = user + "-AvgLoan-Texas"
 val spark = SparkSession.builder.appName(appName).getOrCreate()
+val bucketname = "xxx"  // 講師の指示に従って更新してください
 
 // インプットパスとして S3 のパスを設定
-val input_path ="s3a://csano-de-buk-ed886600/data/input/PPP-Sub-150k-TX.csv"
+val input_path ="s3a://" + bucketname + "/data/input/PPP-Sub-150k-TX.csv"
 
 val base_df=spark.read.option("header","true").option("inferSchema","true").csv(input_path)
 
