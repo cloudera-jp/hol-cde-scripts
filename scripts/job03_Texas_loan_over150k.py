@@ -8,7 +8,7 @@ import sys
 
 ### ユーザー名の設定
 username = "userxx" ## 講師の指示に従って更新してください
-bucketname = "xxx" ## 講師の指示に従って更新してください
+bucketname = "xxx"  ## 講師の指示に従って更新してください
 
 ###  DB名・アプリ名をユーザー名に応じて設定
 db_name = username + "_TexasPPP"
