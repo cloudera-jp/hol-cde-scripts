@@ -6,7 +6,7 @@ from airflow.operators.dummy_operator import DummyOperator
 from cloudera.cdp.airflow.operators.cde_operator import CDEJobRunOperator
 
 
-owner = "adminxx"
+owner = "userxx"
 
 DAG_name = owner + "_Airflow_Dag"
 job_name_1 = owner + "_job02"
